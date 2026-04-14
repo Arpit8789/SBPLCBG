@@ -150,7 +150,7 @@ section[id] {
   background: linear-gradient(135deg, var(--green-600), var(--green-500));
   color: white;
   font-weight: 700;
-  padding: 18px 36px;
+  padding: 20px 42px;
   border-radius: 18px;
   border: none;
   cursor: pointer;
@@ -159,7 +159,7 @@ section[id] {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  min-height: 60px;
+  min-height: 64px;
 }
 
 .btn-primary::before {
@@ -184,14 +184,14 @@ section[id] {
   background: transparent;
   color: var(--green-400);
   font-weight: 700;
-  padding: 18px 36px;
+  padding: 20px 40px;
   border-radius: 18px;
   border: 2px solid rgba(34, 197, 94, 0.3);
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 0.03em;
   transition: all 0.3s ease;
-  min-height: 60px;
+  min-height: 64px;
 }
 
 .btn-secondary:hover {
@@ -218,11 +218,21 @@ section[id] {
   padding-bottom: clamp(88px, 9vw, 132px);
 }
 
+.page-shell > section:first-of-type {
+  padding-top: var(--space-section-tight);
+}
+
 /* Page Header — used on every subpage to clear the fixed navbar */
 .page-header {
   padding-top: clamp(64px, 8vw, 108px);
   padding-bottom: clamp(40px, 5vw, 72px);
   text-align: center;
+}
+
+.page-header .grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Base Wrapper System */

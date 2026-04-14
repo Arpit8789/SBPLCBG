@@ -38,8 +38,8 @@ export default function AboutSection() {
       <div className="pointer-events-none absolute right-0 top-1/2 h-[800px] w-[800px] -translate-y-1/2 rounded-full bg-green-900/10 blur-[150px]" />
 
       <div className="grid-container relative">
-        <div className="grid items-center gap-14 lg:grid-cols-12 xl:gap-24">
-          <div className="section-stack lg:col-span-5">
+        <div className="grid items-center gap-14 lg:grid-cols-12 xl:gap-20">
+          <div className="section-stack items-center text-center lg:col-span-5">
             <motion.div
               variants={fadeUp}
               custom={0}
@@ -66,7 +66,7 @@ export default function AboutSection() {
               custom={2}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="subheading-prime max-w-xl"
+              className="subheading-prime mx-auto max-w-2xl"
             >
               <strong className="text-white">Shivay BioIndhan Pvt Ltd (SBPL)</strong> is a government-registered,
               future-ready company reshaping India&apos;s fuel infrastructure through a modern
@@ -78,7 +78,7 @@ export default function AboutSection() {
               custom={3}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="body-prime max-w-xl"
+              className="body-prime mx-auto max-w-2xl"
             >
               Shivay BioIndhan is more than a fuel company. It is a scalable business platform that helps investors
               and partners build profitable multi-energy stations with stronger operational support and clearer execution.
@@ -89,10 +89,10 @@ export default function AboutSection() {
               custom={4}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="grid gap-5"
+              className="grid w-full gap-5"
             >
               {featureItems.map((item) => (
-                <div key={item.title} className="glass-card flex items-start gap-5 px-5 py-5 md:px-6 md:py-6">
+                <div key={item.title} className="glass-card flex items-start gap-5 px-5 py-6 text-left md:px-6 md:py-7">
                   <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-white/8 bg-[#0a1a0a] text-[12px] font-semibold uppercase tracking-[0.16em] text-green-300 shadow-inner">
                     {item.icon}
                   </div>
@@ -110,12 +110,12 @@ export default function AboutSection() {
             custom={2}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            className="relative lg:col-span-7 lg:pl-10 xl:pl-12"
+            className="relative lg:col-span-7 lg:pl-6 xl:pl-10"
           >
             <div className="relative min-h-[520px] overflow-hidden rounded-[36px] border border-white/8 bg-white/5 shadow-2xl sm:min-h-[580px]">
               <Image
-                src="/frames/ezgif-frame-010.jpg"
-                alt="SBPL Biogas to CNG Production Plant"
+                src="/gallery/gallery-1.jpeg"
+                alt="SBPL station from the gallery"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover opacity-80 transition-transform duration-[2s] hover:scale-[1.03]"
@@ -126,7 +126,7 @@ export default function AboutSection() {
             <motion.div
               animate={{ y: [-5, 5, -5] }}
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute bottom-5 left-5 max-w-[320px] rounded-[28px] border border-white/10 bg-[#0a140d]/95 p-6 shadow-[0_20px_40px_rgba(0,0,0,0.6)] backdrop-blur-md md:bottom-8 md:left-8 md:p-7"
+              className="absolute bottom-5 left-5 max-w-[320px] rounded-[28px] border border-white/10 bg-[#0a140d]/95 p-6 text-left shadow-[0_20px_40px_rgba(0,0,0,0.6)] backdrop-blur-md md:bottom-8 md:left-8 md:p-7"
             >
               <div className="mb-4 flex items-center gap-4">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full border border-green-500/30 bg-green-500/20 text-green-400">

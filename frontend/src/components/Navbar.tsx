@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="grid-container flex min-h-[92px] items-center justify-between gap-6 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 md:gap-5">
-            <div className="relative h-14 w-14 md:h-16 md:w-16">
+            <div className="relative h-16 w-16 shrink-0 md:h-[72px] md:w-[72px]">
               <Image src="/logo.png" alt="SBPL Logo" fill className="object-contain" />
             </div>
             <div>
@@ -76,7 +76,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 md:gap-6">
             <Link
               href="/contact"
-              className="hidden lg:flex min-h-[56px] items-center rounded-2xl bg-green-500 px-8 py-3.5 text-[15px] font-bold text-white shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-all hover:scale-[1.02] hover:bg-green-400 xl:px-10 xl:text-[16px]"
+              className="hidden lg:flex min-h-[68px] items-center rounded-[24px] bg-green-500 px-10 py-4 text-[18px] font-extrabold text-white shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-all hover:scale-[1.02] hover:bg-green-400 xl:px-12"
             >
               Apply Now
             </Link>
