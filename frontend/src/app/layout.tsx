@@ -51,7 +51,7 @@ export default function RootLayout({
       </head>
       <body className="noise-overlay">
         <Navbar />
-        <main className="min-h-screen pt-[92px]">
+        <main className="min-h-screen pt-[var(--navbar-height)]">
           {children}
         </main>
         <Footer />

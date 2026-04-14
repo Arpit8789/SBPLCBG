@@ -34,7 +34,7 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 right-0 z-[100] border-b border-white/6 transition-all duration-300 ${
         scrolled ? 'bg-black/92 backdrop-blur-xl shadow-2xl shadow-green-950/20' : 'bg-[#020603]/55 backdrop-blur-md'
       }`}>
-        <div className="grid-container flex min-h-[92px] items-center justify-between gap-6 py-4">
+        <div className="grid-container flex min-h-[var(--navbar-height)] items-center justify-between gap-6 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 md:gap-5">
             <div className="relative h-16 w-16 shrink-0 md:h-[72px] md:w-[72px]">
@@ -111,7 +111,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20, transition: { duration: 0.2 } }}
-            className="fixed inset-0 z-40 flex flex-col bg-black/95 pt-[96px] backdrop-blur-2xl lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col bg-black/95 pt-[var(--navbar-height)] backdrop-blur-2xl lg:hidden"
           >
             <div className="flex flex-1 flex-col gap-3 overflow-y-auto px-6 py-6">
               {navLinks.map((link, i) => (
