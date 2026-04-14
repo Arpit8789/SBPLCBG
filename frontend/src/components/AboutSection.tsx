@@ -46,7 +46,7 @@ export default function AboutSection() {
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
             >
-              <div className="section-label">About SBPL</div>
+              <div className="section-label">About SBIPL</div>
             </motion.div>
 
             <motion.h2
@@ -68,7 +68,7 @@ export default function AboutSection() {
               animate={inView ? 'visible' : 'hidden'}
               className="subheading-prime mx-auto max-w-2xl"
             >
-              <strong className="text-white">Shivay BioIndhan Pvt Ltd (SBPL)</strong> is a government-registered,
+              <strong className="text-white">Shivay BioIndhan Pvt Ltd (SBIPL)</strong> is a government-registered,
               future-ready company reshaping India&apos;s fuel infrastructure through a modern
               <strong className="text-white"> biogas-to-CBG (CNG) production platform</strong>.
             </motion.p>
@@ -93,7 +93,7 @@ export default function AboutSection() {
             >
               {featureItems.map((item) => (
                 <div key={item.title} className="glass-card flex items-start gap-5 px-5 py-6 text-left md:px-6 md:py-7">
-                  <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-white/8 bg-[#0a1a0a] text-[12px] font-semibold uppercase tracking-[0.16em] text-green-300 shadow-inner">
+                  <div className="flex min-h-[56px] min-w-[80px] flex-shrink-0 items-center justify-center rounded-[18px] border border-white/10 bg-[#0a1a0a] px-4 text-[13px] font-bold uppercase tracking-[0.18em] text-green-300 shadow-inner">
                     {item.icon}
                   </div>
                   <div className="space-y-2">

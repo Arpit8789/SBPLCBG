@@ -5,10 +5,10 @@ const footerSections = [
   {
     title: 'Company',
     links: [
-      { name: 'About SBPL', href: '/about' },
+      { name: 'About SBIPL', href: '/about' },
       { name: 'Infrastructure', href: '/infrastructure' },
       { name: 'Investment Plan', href: '/investment' },
-      { name: 'Why SBPL', href: '/why-sbpl' },
+      { name: 'Why SBIPL', href: '/why-sbpl' },
       { name: 'Gallery', href: '/gallery' },
     ],
   },
@@ -42,24 +42,26 @@ export default function Footer() {
 
       <div className="grid-container relative py-16 md:py-20">
         <div className="mx-auto max-w-[1180px]">
-          <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
-            <h3 className="font-['Outfit'] text-[2.1rem] font-extrabold leading-[1.04] tracking-tight text-white sm:text-[2.7rem] md:text-[3.15rem]">
-              Ready to build your fuel empire?
-            </h3>
-            <p className="mt-5 max-w-[620px] text-[0.98rem] leading-8 text-gray-300 sm:text-[1.04rem]">
-              Join India&apos;s fast-growing multi-energy infrastructure network with a cleaner, smarter path to expansion.
-            </p>
+          <div className="flex w-full flex-col items-center justify-between gap-8 lg:flex-row lg:items-center">
+            <div className="max-w-[620px] text-center lg:text-left">
+              <h3 className="font-['Outfit'] text-[2.1rem] font-extrabold leading-[1.04] tracking-tight text-white sm:text-[2.7rem] md:text-[3.15rem]">
+                Ready to build your fuel empire?
+              </h3>
+              <p className="mt-5 text-[0.98rem] leading-8 text-gray-300 sm:text-[1.04rem]">
+                Join India&apos;s fast-growing multi-energy infrastructure network with a cleaner, smarter path to expansion.
+              </p>
+            </div>
 
-            <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex min-h-[54px] min-w-[230px] items-center justify-center rounded-[18px] bg-gradient-to-r from-green-600 to-green-400 px-7 py-4 text-base font-bold text-white shadow-[0_12px_28px_rgba(34,197,94,0.22)] transition-all duration-300 hover:scale-[1.01] hover:from-green-500 hover:to-green-300"
+                className="inline-flex min-h-[60px] min-w-[240px] items-center justify-center rounded-[20px] bg-gradient-to-r from-green-600 to-green-400 px-9 py-4.5 text-[17px] font-bold text-white shadow-[0_12px_28px_rgba(34,197,94,0.22)] transition-all duration-300 hover:scale-[1.02] hover:from-green-500 hover:to-green-300"
               >
                 Apply for Partnership
               </Link>
               <Link
                 href="/investment"
-                className="inline-flex min-h-[54px] min-w-[230px] items-center justify-center rounded-[18px] border border-white/10 bg-white/[0.03] px-7 py-4 text-sm font-medium text-gray-300 transition-all duration-300 hover:border-green-400/30 hover:text-white"
+                className="inline-flex min-h-[60px] min-w-[240px] items-center justify-center rounded-[20px] border border-white/20 bg-white/[0.03] px-9 py-4.5 text-[16px] font-bold text-gray-300 transition-all duration-300 hover:border-green-400/50 hover:text-white"
               >
                 View Investment Plan
               </Link>
@@ -72,10 +74,10 @@ export default function Footer() {
                 <Link href="/" className="flex items-center gap-4">
                   <Image
                     src="/logo.png"
-                    alt="SBPL Logo"
+                    alt="SBIPL Logo"
                     width={64}
                     height={64}
-                    className="h-auto w-auto"
+                    className="object-contain"
                     sizes="64px"
                   />
                   <div className="text-left">
@@ -134,7 +136,7 @@ export default function Footer() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 border-t border-white/8 pt-6 text-center lg:flex-row lg:justify-between">
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
-                &copy; {currentYear} Shivay BioIndhan Pvt Ltd (SBPL). All rights reserved. CIN: U40300BR2024PTC077233
+                &copy; {currentYear} Shivay BioIndhan Pvt Ltd (SBIPL). All rights reserved. CIN: U40300BR2024PTC077233
               </p>
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
                 Building India&apos;s clean energy future

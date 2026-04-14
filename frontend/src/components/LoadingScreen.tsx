@@ -51,7 +51,7 @@ export default function LoadingScreen() {
             {/* Brand */}
             <div className="text-center">
               <h1 className="text-3xl font-bold tracking-wider" style={{ fontFamily: 'Outfit' }}>
-                <span className="gradient-text">SBPL</span>
+                <span className="gradient-text">SBIPL</span>
               </h1>
               <p className="text-xs text-green-500/60 tracking-[0.3em] uppercase mt-2">
                 Shivay BioIndhan

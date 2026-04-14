@@ -108,11 +108,11 @@ export default function InvestmentSection() {
                 </div>
                 <div className="space-y-1">
                   <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gray-500 md:hidden">Project Stage</div>
-                  <span className="block text-[20px] font-medium leading-[1.6] text-gray-200 md:text-[22px]">{item.stage}</span>
+                  <span className="block text-[18px] font-medium leading-[1.6] text-gray-200 md:text-[20px]">{item.stage}</span>
                 </div>
                 <div className="space-y-1 md:text-right">
                   <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gray-500 md:hidden">Investment Amount</div>
-                  <div className="font-['Outfit'] text-[26px] font-bold text-green-400 md:text-[30px]">
+                  <div className="font-['Outfit'] text-[20px] font-bold text-green-400 md:text-[24px]">
                     {item.amount}
                   </div>
                 </div>
@@ -120,9 +120,9 @@ export default function InvestmentSection() {
             ))}
           </div>
 
-          <div className="border-t-4 border-green-600 bg-green-500 p-8 text-center md:p-10">
-            <h3 className="font-['Outfit'] text-[26px] font-black uppercase tracking-[0.08em] text-black md:text-[38px]">
-              Total Project Investment: INR 1.6 Crore
+          <div className="border-t border-green-500/20 bg-gradient-to-r from-green-900/40 to-green-800/40 p-6 text-center md:p-8">
+            <h3 className="font-['Outfit'] text-[22px] font-bold tracking-[0.08em] text-white md:text-[28px]">
+              TOTAL PROJECT INVESTMENT: <span className="text-green-400 font-black">INR 1.6 CRORE</span>
             </h3>
           </div>
         </motion.div>
@@ -131,7 +131,7 @@ export default function InvestmentSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ delay: 0.2 }}
-          className="premium-card mx-auto mt-14 max-w-6xl overflow-hidden"
+          className="premium-card mx-auto mt-20 max-w-6xl overflow-hidden md:mt-24"
         >
           <div className="h-[420px] w-full p-2 md:h-[460px] md:p-4">
             <Bar data={chartData} options={chartOptions} />
@@ -142,22 +142,22 @@ export default function InvestmentSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3"
+          className="mx-auto mt-20 grid w-full max-w-6xl grid-cols-1 gap-8 md:mt-24 md:grid-cols-3 lg:gap-12"
         >
-          <div className="premium-card text-center">
+          <div className="premium-card w-full text-center">
             <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.18em] text-green-300">Income</div>
             <h4 className="mb-3 text-[18px] font-bold text-white uppercase tracking-[0.08em]">Monthly Net Income</h4>
-            <p className="font-['Outfit'] text-[34px] font-black text-green-400">INR 9 - 13 Lakh</p>
+            <p className="font-['Outfit'] text-[28px] font-black text-green-400 lg:text-[32px]">INR 9 - 13 Lakh</p>
           </div>
-          <div className="premium-card text-center">
+          <div className="premium-card w-full text-center">
             <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.18em] text-green-300">Returns</div>
             <h4 className="mb-3 text-[18px] font-bold text-white uppercase tracking-[0.08em]">Annual ROI</h4>
-            <p className="font-['Outfit'] text-[34px] font-black text-green-400">50% - 65%</p>
+            <p className="font-['Outfit'] text-[28px] font-black text-green-400 lg:text-[32px]">50% - 65%</p>
           </div>
-          <div className="premium-card text-center">
+          <div className="premium-card w-full text-center">
             <div className="mb-5 text-[13px] font-bold uppercase tracking-[0.18em] text-green-300">Timeline</div>
             <h4 className="mb-3 text-[18px] font-bold text-white uppercase tracking-[0.08em]">Payback Period</h4>
-            <p className="font-['Outfit'] text-[34px] font-black text-green-400">18 - 24 Months</p>
+            <p className="font-['Outfit'] text-[28px] font-black text-green-400 lg:text-[32px]">18 - 24 Months</p>
           </div>
         </motion.div>
       </div>

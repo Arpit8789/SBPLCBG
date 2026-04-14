@@ -38,7 +38,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="relative mb-2 h-36 w-36 drop-shadow-[0_0_40px_rgba(34,197,94,0.4)] md:h-52 md:w-52"
           >
-            <Image src="/logo.png" alt="SBPL Logo" fill priority sizes="(max-width: 768px) 144px, 208px" className="relative z-10 object-contain" />
+            <Image src="/logo.png" alt="SBIPL Logo" fill priority sizes="(max-width: 768px) 144px, 208px" className="relative z-10 object-contain" />
             <div className="absolute inset-0 bg-green-500/20 rounded-full blur-[40px] z-0" />
           </motion.div>
 
@@ -58,7 +58,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="subheading-prime mx-auto max-w-[860px] text-gray-300"
           >
-            Partner with Shivay BioIndhan Pvt Ltd (SBPL) and build a highly profitable CBG (CNG), Petrol, Diesel & EV charging empire with an estimated <strong className="text-white">50-65% ROI</strong>.
+            Partner with Shivay BioIndhan Pvt Ltd (SBIPL) and build a highly profitable CBG (CNG), Petrol, Diesel & EV charging empire with an estimated <strong className="text-white">50-65% ROI</strong>.
           </motion.p>
 
           <motion.div
@@ -69,7 +69,7 @@ export default function HeroSection() {
           >
             <Link
               href="/contact"
-              className="flex min-h-[64px] items-center justify-center gap-3 rounded-2xl bg-green-500 px-10 py-5 text-center text-[17px] font-black text-black shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-[1.02] hover:bg-green-400 md:px-12 md:text-[18px]"
+              className="flex min-h-[72px] items-center justify-center gap-3 rounded-[20px] bg-green-500 px-12 py-6 text-center text-[18px] font-black text-black shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-[1.02] hover:bg-green-400 md:min-h-[80px] md:px-14 md:text-[19px]"
             >
               Apply for Partnership
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,7 +78,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/investment"
-              className="min-h-[64px] rounded-2xl border-2 border-white/20 bg-black/60 px-10 py-5 text-center text-[17px] font-bold text-white backdrop-blur-md transition-all hover:border-white/50 hover:bg-white/5 md:px-12 md:text-[18px]"
+              className="flex min-h-[72px] items-center justify-center rounded-[20px] border-2 border-white/20 bg-black/60 px-12 py-6 text-center text-[18px] font-bold text-white backdrop-blur-md transition-all hover:border-white/50 hover:bg-white/5 md:min-h-[80px] md:px-14 md:text-[19px]"
             >
               View Investment Plan
             </Link>

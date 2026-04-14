@@ -31,7 +31,7 @@ export default function WhySbplSection() {
     <section className="section-padding section-divider relative overflow-hidden bg-[#020603]" ref={ref}>
       <div className="grid-container relative">
         <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
-          <div className="section-label mx-auto">Why SBPL</div>
+          <div className="section-label mx-auto">Why SBIPL</div>
           <h2 className="section-title text-white">A clearer path to a stronger fuel business</h2>
           <p className="section-subtitle mx-auto">
             The business case is stronger when execution support, infrastructure planning, and long-term market demand all line up.
@@ -86,7 +86,7 @@ export default function WhySbplSection() {
                   {step.icon}
                 </div>
                 <h4 className="mb-4 max-w-[220px] text-center text-[20px] font-bold text-white">{step.title}</h4>
-                <div className="rounded-full border border-green-500/30 bg-green-500/10 px-6 py-2.5 text-[13px] font-bold uppercase tracking-[0.16em] text-green-400">
+                <div className="rounded-[20px] border border-green-500/30 bg-green-500/10 px-8 py-3.5 text-[14px] font-bold uppercase tracking-[0.18em] text-green-400">
                   {step.time}
                 </div>
               </motion.div>

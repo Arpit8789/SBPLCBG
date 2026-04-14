@@ -67,7 +67,7 @@ export default function ApplicationForm() {
             transition={{ duration: 0.7 }}
             className="section-stack max-w-xl"
           >
-            <div className="section-label">Partner with SBPL</div>
+            <div className="section-label">Partner with SBIPL</div>
             <h2 className="section-title">
               Start Your <span className="gradient-text-gold">Fuel Business</span> Today
             </h2>
@@ -84,7 +84,7 @@ export default function ApplicationForm() {
                 'Free feasibility study for your location',
                 'Detailed ROI projection report',
                 'Transparent commercial discussion with no hidden charges',
-                'End-to-end setup support by SBPL',
+                'End-to-end setup support by SBIPL',
               ].map((benefit) => (
                 <div key={benefit} className="flex items-start gap-4">
                   <div className="mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-green-500/15">
@@ -107,7 +107,7 @@ export default function ApplicationForm() {
                     Limited Territories Available
                   </h4>
                   <p className="text-[15px] leading-[1.8] text-green-100/45">
-                    SBPL is onboarding partners in select locations. Applying early gives your territory a better chance of staying open.
+                    SBIPL is onboarding partners in select locations. Applying early gives your territory a better chance of staying open.
                   </p>
                 </div>
               </div>

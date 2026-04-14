@@ -22,7 +22,7 @@ const steps = [
   {
     phase: '03',
     title: 'Setup and Construction',
-    description: 'SBPL manages civil work, equipment installation, safety systems, and technical integration from end to end.',
+    description: 'SBIPL manages civil work, equipment installation, safety systems, and technical integration from end to end.',
     duration: 'Month 2-4',
     icon: 'Build',
     details: ['Civil construction', 'Equipment installation', 'Safety systems', 'Tech integration']
@@ -89,7 +89,7 @@ export default function TimelineSection() {
                 {step.details.map((detail) => (
                   <span
                     key={detail}
-                    className="rounded-full bg-green-500/10 px-4 py-2 text-[13px] text-green-400/80"
+                    className="rounded-full bg-green-500/10 px-5 py-2.5 text-[14px] text-green-400/80"
                   >
                     {detail}
                   </span>

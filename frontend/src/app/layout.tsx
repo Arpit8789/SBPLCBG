@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shivay BioIndhan Pvt Ltd (SBPL) | Build Your Fuel Empire - CBG (CNG), Biogas & Multi-Energy Stations",
+  title: "Shivay BioIndhan Pvt Ltd (SBIPL) | Build Your Fuel Empire - CBG (CNG), Biogas & Multi-Energy Stations",
   description:
     "SBPL - India's premier multi-energy fuel infrastructure company. Invest in CBG (CNG), biogas, petrol, diesel and EV charging stations. Rs. 1.6 Crore investment, 50-65% ROI, 18-24 month payback. Partner with Shivay BioIndhan for the future of clean mobility.",
   keywords:
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -54,7 +54,7 @@ export default function RootLayout({
       </head>
       <body className="noise-overlay">
         <Navbar />
-        <main className="min-h-screen pt-[var(--navbar-height)]">
+        <main className="min-h-screen">
           {children}
         </main>
         <Footer />

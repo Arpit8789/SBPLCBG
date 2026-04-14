@@ -225,7 +225,7 @@ section[id] {
 
 /* Page Header — used on every subpage to clear the fixed navbar */
 .page-header {
-  padding-top: clamp(24px, 4vw, 40px);
+  padding-top: calc(var(--navbar-height) + clamp(24px, 4vw, 40px));
   padding-bottom: clamp(40px, 5vw, 72px);
   text-align: center;
 }

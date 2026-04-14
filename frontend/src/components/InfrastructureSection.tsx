@@ -54,7 +54,7 @@ export default function InfrastructureSection() {
             <div className="relative h-full min-h-[420px] overflow-hidden rounded-[38px] border border-white/8 bg-white/5 shadow-[0_20px_60px_rgba(34,197,94,0.15)] sm:min-h-[520px]">
               <Image
                 src="/gallery/gallery-4.jpeg"
-                alt="SBPL Multi-Energy Fuel Station Infrastructure"
+                alt="SBIPL Multi-Energy Fuel Station Infrastructure"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover opacity-90 transition-transform duration-[2s] hover:scale-[1.03]"

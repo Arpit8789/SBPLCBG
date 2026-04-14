@@ -264,7 +264,7 @@ export default function AdminPage() {
               SB
             </div>
             <div>
-              <h1 className="text-sm font-bold text-green-300" style={{ fontFamily: 'Outfit' }}>SBPL Admin</h1>
+              <h1 className="text-sm font-bold text-green-300" style={{ fontFamily: 'Outfit' }}>SBIPL Admin</h1>
               <p className="text-[10px] text-green-500/40">Shivay BioIndhan Dashboard</p>
             </div>
           </div>

@@ -5,11 +5,11 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: '/gallery/gallery-1.jpeg', alt: 'SBPL Premium Fuel Station by Shivay BioIndhan', title: 'SBPL Premium Station', category: 'station' },
+  { src: '/gallery/gallery-1.jpeg', alt: 'SBIPL Premium Fuel Station by Shivay BioIndhan', title: 'SBIPL Premium Station', category: 'station' },
   { src: '/gallery/gallery-2.jpeg', alt: 'Shivay BioIndhan Night View Fuel Station', title: 'Night View Station', category: 'station' },
-  { src: '/gallery/gallery-3.jpeg', alt: 'SBPL Investment Returns Dashboard', title: 'Investment Returns', category: 'data' },
+  { src: '/gallery/gallery-3.jpeg', alt: 'SBIPL Investment Returns Dashboard', title: 'Investment Returns', category: 'data' },
   { src: '/gallery/gallery-4.jpeg', alt: 'Shivay BioIndhan CBG (CNG) Production Plant', title: 'CBG (CNG) Plant Infrastructure', category: 'plant' },
-  { src: '/gallery/gallery-5.jpeg', alt: 'SBPL Multi-Energy Station with EV Charging', title: 'Revenue Dashboard', category: 'data' },
+  { src: '/gallery/gallery-5.jpeg', alt: 'SBIPL Multi-Energy Station with EV Charging', title: 'Revenue Dashboard', category: 'data' },
   { src: '/gallery/gallery-6.jpeg', alt: 'Shivay BioIndhan Pan-India Expansion Map', title: 'Pan-India Expansion', category: 'map' }
 ];
 
@@ -28,7 +28,7 @@ export default function GallerySection() {
         >
           <div className="section-label mx-auto">Visual Gallery</div>
           <h2 className="section-title">
-            See the <span className="gradient-text">SBPL</span> Vision
+            See the <span className="gradient-text">SBIPL</span> Vision
           </h2>
           <p className="section-subtitle mx-auto">
             Explore Shivay BioIndhan&apos;s world-class fuel station designs, infrastructure, and the future of multi-energy mobility.

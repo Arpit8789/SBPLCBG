@@ -29,7 +29,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Shivay BioIndhan Pvt Ltd",
-            "alternateName": "SBPL",
+            "alternateName": "SBIPL",
             "url": "https://www.sbpl.in",
             "description": "India's premier multi-energy fuel infrastructure company offering CBG (CNG), biogas, petrol, diesel and EV charging station franchise opportunities.",
             "foundingDate": "2024",

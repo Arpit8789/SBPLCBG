@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'About', href: '/about' },
   { name: 'Infrastructure', href: '/infrastructure' },
   { name: 'Investment', href: '/investment' },
-  { name: 'Why SBPL', href: '/why-sbpl' },
+  { name: 'Why SBIPL', href: '/why-sbpl' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -46,11 +46,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 md:gap-5">
             <div className="relative h-[76px] w-[76px] shrink-0 md:h-[90px] md:w-[90px]">
-              <Image src="/logo.png" alt="SBPL Logo" fill loading="eager" sizes="(max-width: 768px) 76px, 90px" className="object-contain" />
+              <Image src="/logo.png" alt="SBIPL Logo" fill loading="eager" sizes="(max-width: 768px) 76px, 90px" className="object-contain" />
             </div>
             <div>
               <span className="block font-['Outfit'] text-[2rem] font-black leading-none tracking-wide md:text-[2.35rem]">
-                <span className="text-white">SB</span><span className="text-green-500">PL</span>
+                <span className="text-white">SB</span><span className="text-green-500">IPL</span>
               </span>
               <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.23em] text-green-400 md:text-[12px]">
                 Shivay BioIndhan Pvt Ltd
@@ -84,7 +84,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 md:gap-6">
             <Link
               href="/contact"
-              className="hidden lg:inline-flex min-h-[48px] items-center justify-center rounded-xl bg-green-500 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-green-400"
+              className="hidden lg:inline-flex min-h-[54px] items-center justify-center rounded-2xl bg-gradient-to-r from-green-600 to-green-400 px-8 py-3 text-[15px] font-bold text-white transition-all hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]"
             >
               Apply Now
             </Link>
