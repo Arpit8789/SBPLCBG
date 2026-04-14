@@ -29,6 +29,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[100] border-b border-white/6 transition-all duration-300 ${
@@ -37,11 +45,11 @@ export default function Navbar() {
         <div className="grid-container flex min-h-[var(--navbar-height)] items-center justify-between gap-6 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 md:gap-5">
-            <div className="relative h-16 w-16 shrink-0 md:h-[72px] md:w-[72px]">
-              <Image src="/logo.png" alt="SBPL Logo" fill className="object-contain" />
+            <div className="relative h-[76px] w-[76px] shrink-0 md:h-[90px] md:w-[90px]">
+              <Image src="/logo.png" alt="SBPL Logo" fill loading="eager" sizes="(max-width: 768px) 76px, 90px" className="object-contain" />
             </div>
             <div>
-              <span className="block font-['Outfit'] text-[1.85rem] font-black leading-none tracking-wide md:text-[2rem]">
+              <span className="block font-['Outfit'] text-[2rem] font-black leading-none tracking-wide md:text-[2.35rem]">
                 <span className="text-white">SB</span><span className="text-green-500">PL</span>
               </span>
               <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.23em] text-green-400 md:text-[12px]">
@@ -76,7 +84,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 md:gap-6">
             <Link
               href="/contact"
-              className="hidden lg:flex min-h-[68px] items-center rounded-[24px] bg-green-500 px-10 py-4 text-[18px] font-extrabold text-white shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-all hover:scale-[1.02] hover:bg-green-400 xl:px-12"
+              className="hidden lg:inline-flex min-h-[48px] items-center justify-center rounded-xl bg-green-500 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-green-400"
             >
               Apply Now
             </Link>
@@ -111,9 +119,9 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20, transition: { duration: 0.2 } }}
-            className="fixed inset-0 z-40 flex flex-col bg-black/95 pt-[var(--navbar-height)] backdrop-blur-2xl lg:hidden"
+            className="fixed top-[var(--navbar-height)] right-0 bottom-0 left-0 z-40 flex flex-col bg-black/95 backdrop-blur-2xl lg:hidden"
           >
-            <div className="flex flex-1 flex-col gap-3 overflow-y-auto px-6 py-6">
+            <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto overscroll-contain px-4 py-4 sm:px-6 sm:py-6">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.name}
@@ -125,7 +133,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className={`block w-full rounded-[24px] px-6 py-5 text-center text-xl font-medium transition-all ${
+                    className={`block w-full rounded-[20px] px-4 py-3 text-center text-lg font-medium transition-all sm:px-6 sm:py-4 sm:text-xl ${
                       pathname === link.href
                         ? 'text-white bg-green-500/20 shadow-[0_0_15px_rgba(34,197,94,0.2)]'
                         : 'text-gray-400 hover:text-white hover:bg-white/5'
@@ -139,12 +147,12 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.05 }}
-                className="mt-6 w-full"
+                className="mt-3 w-full"
               >
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="block w-full rounded-[24px] bg-gradient-to-r from-green-600 to-green-400 px-6 py-5 text-center text-lg font-bold text-white shadow-[0_0_30px_rgba(34,197,94,0.4)]"
+                  className="block w-full rounded-[20px] bg-gradient-to-r from-green-600 to-green-400 px-4 py-3 text-center text-base font-bold text-white shadow-[0_0_30px_rgba(34,197,94,0.4)] sm:px-6 sm:py-4 sm:text-lg"
                 >
                   Apply for Partnership
                 </Link>

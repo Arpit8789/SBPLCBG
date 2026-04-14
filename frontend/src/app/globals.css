@@ -150,17 +150,17 @@ section[id] {
 .btn-primary {
   background: linear-gradient(135deg, var(--green-600), var(--green-500));
   color: white;
-  font-weight: 700;
-  padding: 20px 42px;
-  border-radius: 18px;
+  font-weight: 600;
+  padding: 12px 24px;   /* FIXED */
+  border-radius: 12px;  /* slightly tighter */
   border: none;
   cursor: pointer;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-  min-height: 64px;
+  font-size: 14px;      /* FIXED */
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-primary::before {

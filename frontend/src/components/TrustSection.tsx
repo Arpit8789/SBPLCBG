@@ -24,7 +24,7 @@ const certifications = [
   {
     icon: 'GREEN',
     title: 'Environmental Clearance',
-    description: 'Biogas-to-CNG operations are positioned around cleaner energy commitments.',
+    description: 'Biogas-to-CBG (CNG) operations are positioned around cleaner energy commitments.',
     detail: 'Green energy certified'
   },
   {

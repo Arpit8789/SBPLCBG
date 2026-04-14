@@ -31,7 +31,7 @@ export default function Home() {
             "name": "Shivay BioIndhan Pvt Ltd",
             "alternateName": "SBPL",
             "url": "https://www.sbpl.in",
-            "description": "India's premier multi-energy fuel infrastructure company offering CNG, Biogas, Petrol, Diesel & EV Charging station franchise opportunities.",
+            "description": "India's premier multi-energy fuel infrastructure company offering CBG (CNG), biogas, petrol, diesel and EV charging station franchise opportunities.",
             "foundingDate": "2024",
             "address": {
               "@type": "PostalAddress",
@@ -47,7 +47,7 @@ export default function Home() {
             "makesOffer": {
               "@type": "Offer",
               "name": "Multi-Energy Fuel Station Franchise",
-              "description": "CNG + Petrol + Diesel + EV Charging station franchise with 50-65% ROI",
+              "description": "CBG (CNG) + Petrol + Diesel + EV Charging station franchise with 50-65% ROI",
               "priceCurrency": "INR"
             }
           })

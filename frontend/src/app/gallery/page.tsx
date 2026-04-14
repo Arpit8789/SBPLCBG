@@ -37,7 +37,8 @@ export default function GalleryPage() {
               <Image 
                 src={src} 
                 alt={`SBPL Facility ${idx + 1}`} 
-                fill 
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

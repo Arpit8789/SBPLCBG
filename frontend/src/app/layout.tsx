@@ -4,19 +4,22 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shivay BioIndhan Pvt Ltd (SBPL) | Build Your Fuel Empire — CNG, Biogas & Multi-Energy Stations",
-  description: "SBPL — India's premier multi-energy fuel infrastructure company. Invest in CNG, Biogas, Petrol, Diesel & EV Charging stations. ₹1.6 Crore investment, 50-65% ROI, 18-24 month payback. Partner with Shivay BioIndhan for the future of clean mobility.",
-  keywords: "SBPL, Shivay BioIndhan, CNG station, biogas plant, fuel station franchise, EV charging, petrol pump business, clean energy investment, Bihar CNG, multi-energy station, fuel business opportunity, Shivay Bio Indhan Pvt Ltd",
+  title: "Shivay BioIndhan Pvt Ltd (SBPL) | Build Your Fuel Empire - CBG (CNG), Biogas & Multi-Energy Stations",
+  description:
+    "SBPL - India's premier multi-energy fuel infrastructure company. Invest in CBG (CNG), biogas, petrol, diesel and EV charging stations. Rs. 1.6 Crore investment, 50-65% ROI, 18-24 month payback. Partner with Shivay BioIndhan for the future of clean mobility.",
+  keywords:
+    "SBPL, Shivay BioIndhan, CBG station, CNG station, biogas plant, fuel station franchise, EV charging, petrol pump business, clean energy investment, Bihar CBG, multi-energy station, fuel business opportunity, Shivay Bio Indhan Pvt Ltd",
   openGraph: {
-    title: "SBPL — Build Your Fuel Empire | Shivay BioIndhan Pvt Ltd",
-    description: "India's fastest-growing multi-energy fuel infrastructure. CNG + Petrol + Diesel + EV Charging. Invest ₹1.6 Crore, Earn ₹9-13 Lakhs/month.",
+    title: "SBPL - Build Your Fuel Empire | Shivay BioIndhan Pvt Ltd",
+    description:
+      "India's fastest-growing multi-energy fuel infrastructure. CBG (CNG) + Petrol + Diesel + EV Charging. Invest Rs. 1.6 Crore, Earn Rs. 9-13 Lakhs/month.",
     type: "website",
     locale: "en_IN",
     siteName: "Shivay BioIndhan Pvt Ltd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SBPL — Build Your Fuel Empire | Shivay BioIndhan",
+    title: "SBPL - Build Your Fuel Empire | Shivay BioIndhan",
     description: "India's premier multi-energy infrastructure. 50-65% ROI. Partner with SBPL today.",
   },
   robots: {

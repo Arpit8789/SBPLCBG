@@ -8,7 +8,7 @@ const galleryImages = [
   { src: '/gallery/gallery-1.jpeg', alt: 'SBPL Premium Fuel Station by Shivay BioIndhan', title: 'SBPL Premium Station', category: 'station' },
   { src: '/gallery/gallery-2.jpeg', alt: 'Shivay BioIndhan Night View Fuel Station', title: 'Night View Station', category: 'station' },
   { src: '/gallery/gallery-3.jpeg', alt: 'SBPL Investment Returns Dashboard', title: 'Investment Returns', category: 'data' },
-  { src: '/gallery/gallery-4.jpeg', alt: 'Shivay BioIndhan CNG Production Plant', title: 'CNG Plant Infrastructure', category: 'plant' },
+  { src: '/gallery/gallery-4.jpeg', alt: 'Shivay BioIndhan CBG (CNG) Production Plant', title: 'CBG (CNG) Plant Infrastructure', category: 'plant' },
   { src: '/gallery/gallery-5.jpeg', alt: 'SBPL Multi-Energy Station with EV Charging', title: 'Revenue Dashboard', category: 'data' },
   { src: '/gallery/gallery-6.jpeg', alt: 'Shivay BioIndhan Pan-India Expansion Map', title: 'Pan-India Expansion', category: 'map' }
 ];

@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 const facilityComponents = [
-  'CNG dispensing bays and fuel dispensers for petrol and diesel',
+  'CBG (CNG) dispensing bays and fuel dispensers for petrol and diesel',
   'EV fast DC charging zones with dedicated charging capacity',
   'Operator office, control room, and separate utilities',
   'Tanker access bay with dedicated rear movement access',

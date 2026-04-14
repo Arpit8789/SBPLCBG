@@ -6,7 +6,7 @@ import Image from 'next/image';
 const featureItems = [
   {
     icon: 'Plant',
-    title: 'Biogas to CNG Production',
+    title: 'Biogas to CBG (CNG) Production',
     desc: 'Advanced internal production infrastructure keeps supply dependable and ready for scale.',
   },
   {
@@ -70,7 +70,7 @@ export default function AboutSection() {
             >
               <strong className="text-white">Shivay BioIndhan Pvt Ltd (SBPL)</strong> is a government-registered,
               future-ready company reshaping India&apos;s fuel infrastructure through a modern
-              <strong className="text-white"> biogas-to-CNG production platform</strong>.
+              <strong className="text-white"> biogas-to-CBG (CNG) production platform</strong>.
             </motion.p>
 
             <motion.p
@@ -117,6 +117,7 @@ export default function AboutSection() {
                 src="/gallery/gallery-1.jpeg"
                 alt="SBPL station from the gallery"
                 fill
+                priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover opacity-80 transition-transform duration-[2s] hover:scale-[1.03]"
               />
