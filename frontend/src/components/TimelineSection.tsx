@@ -32,7 +32,7 @@ const steps = [
     title: 'Commissioning and Launch',
     description: 'Final inspections, government approvals, staff training, and launch readiness bring the station online.',
     duration: 'Month 5-6',
-    icon: 'Go',
+    icon: 'Launch',
     details: ['Final inspection', 'Govt. approvals', 'Staff training', 'Grand launch']
   }
 ];
@@ -62,65 +62,39 @@ export default function TimelineSection() {
           </p>
         </motion.div>
 
-        <div className="relative">
-          <div className="absolute bottom-0 left-6 top-0 hidden w-px bg-gradient-to-b from-green-500/30 via-green-500/10 to-transparent md:block md:left-1/2" />
-
+        <div className="mx-auto flex max-w-5xl flex-col gap-8 md:gap-10">
           {steps.map((step, i) => (
             <motion.div
               key={step.phase}
-              initial={{ opacity: 0, y: 40, x: i % 2 === 0 ? -30 : 30 }}
-              animate={inView ? { opacity: 1, y: 0, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: i * 0.16 }}
-              className={`relative mb-16 flex flex-col gap-8 md:flex-row md:items-start md:gap-10 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+              initial={{ opacity: 0, y: 40 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: i * 0.12 }}
+              className="glass-card rounded-[32px] px-6 py-8 text-center md:px-10 md:py-10"
             >
-              <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                <div className="glass-card inline-block w-full max-w-xl p-8 md:p-10">
-                  <div
-                    className="mb-5 flex items-center gap-4"
-                    style={{ flexDirection: i % 2 === 0 ? 'row-reverse' : 'row' }}
-                  >
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-500/15 text-[12px] font-bold uppercase tracking-[0.14em] text-green-300">
-                      {step.icon}
-                    </span>
-                    <div>
-                      <div className="mb-1 text-[12px] uppercase tracking-[0.18em] text-green-400/60">{step.duration}</div>
-                      <h3 className="text-[24px] font-bold text-green-200" style={{ fontFamily: 'Outfit' }}>
-                        {step.title}
-                      </h3>
-                    </div>
-                  </div>
-
-                  <p className="mb-5 text-[15px] leading-[1.85] text-green-100/45">
-                    {step.description}
-                  </p>
-
-                  <div className={`flex flex-wrap gap-2.5 ${i % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
-                    {step.details.map((detail) => (
-                      <span
-                        key={detail}
-                        className="rounded-full bg-green-500/10 px-3.5 py-1.5 text-[12px] text-green-400/70"
-                      >
-                        {detail}
-                      </span>
-                    ))}
-                  </div>
+              <div className="mb-5 flex flex-col items-center gap-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-green-500/40 bg-green-500/18 text-[15px] font-bold tracking-[0.12em] text-green-300">
+                  {step.phase}
+                </div>
+                <div className="space-y-2">
+                  <div className="text-[13px] uppercase tracking-[0.22em] text-green-400/70">{step.duration}</div>
+                  <h3 className="font-['Outfit'] text-[28px] font-bold text-white md:text-[34px]">{step.title}</h3>
                 </div>
               </div>
 
-              <div className="hidden md:flex md:flex-col md:items-center md:justify-start">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={inView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.4, delay: i * 0.16 + 0.3 }}
-                  className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-green-500/40 bg-green-500/20"
-                >
-                  <span className="text-sm font-bold text-green-400" style={{ fontFamily: 'Outfit' }}>
-                    {step.phase}
-                  </span>
-                </motion.div>
-              </div>
+              <p className="mx-auto mb-6 max-w-3xl text-[16px] leading-[1.9] text-green-100/50 md:text-[18px]">
+                {step.description}
+              </p>
 
-              <div className="hidden flex-1 md:block" />
+              <div className="flex flex-wrap justify-center gap-3">
+                {step.details.map((detail) => (
+                  <span
+                    key={detail}
+                    className="rounded-full bg-green-500/10 px-4 py-2 text-[13px] text-green-400/80"
+                  >
+                    {detail}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

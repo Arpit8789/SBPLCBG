@@ -89,9 +89,10 @@ export default function InvestmentSection() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          className="premium-card mx-auto max-w-6xl !p-0 overflow-hidden"
+          className="premium-card mx-auto w-full max-w-6xl !p-0 overflow-hidden"
         >
-          <div className="hidden border-b border-green-500/30 bg-gradient-to-r from-green-900/80 to-green-800/80 p-8 md:grid md:grid-cols-[minmax(0,1.35fr)_minmax(220px,1fr)] md:gap-8">
+          <div className="hidden border-b border-green-500/30 bg-gradient-to-r from-green-900/80 to-green-800/80 md:grid md:grid-cols-[96px_minmax(0,1.4fr)_minmax(240px,0.8fr)] md:gap-6 md:px-10 md:py-8 lg:px-12">
+            <div className="text-[15px] font-bold uppercase tracking-[0.16em] text-white">Code</div>
             <div className="text-[18px] font-bold uppercase tracking-[0.16em] text-white">Project Stage</div>
             <div className="text-right text-[18px] font-bold uppercase tracking-[0.16em] text-white">Investment Amount</div>
           </div>
@@ -100,20 +101,18 @@ export default function InvestmentSection() {
             {investmentData.map((item, index) => (
               <div
                 key={index}
-                className="grid gap-4 p-6 transition-colors hover:bg-white/[0.02] md:grid-cols-[minmax(0,1.35fr)_minmax(220px,1fr)] md:items-center md:gap-8 md:p-8"
+                className="grid gap-4 px-6 py-6 transition-colors hover:bg-white/[0.02] md:grid-cols-[96px_minmax(0,1.4fr)_minmax(240px,0.8fr)] md:items-center md:gap-6 md:px-10 md:py-7 lg:px-12"
               >
-                <div className="flex items-start gap-4 md:items-center md:gap-6">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-500/15 text-[11px] font-bold uppercase tracking-[0.14em] text-green-300 md:h-14 md:w-14">
-                    {item.icon}
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gray-500 md:hidden">Project Stage</div>
-                    <span className="block text-[18px] font-medium leading-[1.65] text-gray-200 md:text-[22px]">{item.stage}</span>
-                  </div>
+                <div className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-green-500/15 text-[11px] font-bold uppercase tracking-[0.16em] text-green-300 md:h-16 md:w-16">
+                  {item.icon}
+                </div>
+                <div className="space-y-1">
+                  <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gray-500 md:hidden">Project Stage</div>
+                  <span className="block text-[20px] font-medium leading-[1.6] text-gray-200 md:text-[22px]">{item.stage}</span>
                 </div>
                 <div className="space-y-1 md:text-right">
                   <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gray-500 md:hidden">Investment Amount</div>
-                  <div className="font-['Outfit'] text-[28px] font-bold text-green-400 md:text-[30px]">
+                  <div className="font-['Outfit'] text-[26px] font-bold text-green-400 md:text-[30px]">
                     {item.amount}
                   </div>
                 </div>

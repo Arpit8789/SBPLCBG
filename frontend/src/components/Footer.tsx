@@ -57,8 +57,8 @@ export default function Footer() {
 
       <div className="py-20 md:py-24">
         <div className="grid-container">
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-12 lg:gap-12 xl:gap-16">
-            <div className="lg:col-span-4 lg:pr-10">
+          <div className="grid grid-cols-1 gap-16 text-center md:grid-cols-2 lg:grid-cols-12 lg:gap-12 xl:gap-16">
+            <div className="flex flex-col items-center lg:col-span-4 lg:pr-10">
               <Link href="/" className="mb-8 flex items-center gap-4">
                 <div className="relative h-14 w-14">
                   <Image src="/logo.png" alt="SBPL Logo" fill className="object-contain" />
@@ -73,7 +73,7 @@ export default function Footer() {
                 </div>
               </Link>
 
-              <p className="max-w-md text-[15px] leading-[1.9] text-gray-500 md:text-[16px]">
+              <p className="mx-auto max-w-md text-[15px] leading-[1.9] text-gray-500 md:text-[16px]">
                 India&apos;s premier multi-energy fuel infrastructure company, enabling investors to build highly profitable multi-energy stations across the nation.
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 md:flex-row md:items-center">
+          <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-center md:flex-row">
             <p className="text-[13px] leading-relaxed text-gray-600">
               &copy; {new Date().getFullYear()} Shivay BioIndhan Pvt Ltd (SBPL). All rights reserved.<br className="md:hidden" /> CIN: U40300BR2024PTC077233
             </p>
