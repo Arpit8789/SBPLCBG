@@ -68,7 +68,7 @@ export default function AboutSection() {
               animate={inView ? 'visible' : 'hidden'}
               className="subheading-prime mx-auto max-w-2xl"
             >
-              <strong className="text-white">Shivay BioIndhan Pvt Ltd (SBPL)</strong> is a government-registered,
+              <strong className="text-white">Shivay BioIndhan Pvt Ltd</strong> is a government-registered,
               future-ready company reshaping India&apos;s fuel infrastructure through a modern
               <strong className="text-white"> biogas-to-CBG (CNG) production platform</strong>.
             </motion.p>

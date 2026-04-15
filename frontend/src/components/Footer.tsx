@@ -136,7 +136,7 @@ export default function Footer() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 border-t border-white/8 pt-6 text-center lg:flex-row lg:justify-between">
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
-                &copy; {currentYear} Shivay BioIndhan Pvt Ltd (SBPL). All rights reserved. CIN: U40300BR2024PTC077233
+                &copy; {currentYear} Shivay BioIndhan Pvt Ltd. All rights reserved. CIN: U40300BR2024PTC077233
               </p>
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
                 Building India&apos;s clean energy future

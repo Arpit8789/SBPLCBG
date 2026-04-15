@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -30,23 +29,13 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mx-auto flex max-w-[1080px] flex-col items-center gap-8"
+          className="mx-auto flex max-w-[1080px] flex-col items-center gap-6 pt-12"
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative mb-2 h-44 w-44 drop-shadow-[0_0_40px_rgba(34,197,94,0.4)] md:h-94 md:w-94"
-          >
-            <Image src="/logo.png" alt="SBPL Logo" fill priority sizes="(max-width: 768px) 176px, 256px" className="relative z-10 object-contain" />
-            <div className="absolute inset-0 bg-green-500/20 rounded-full blur-[40px] z-0" />
-          </motion.div>
-
           {/* Epic Scaled Typography */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="heading-prime max-w-[980px] text-white leading-[1.05]"
           >
             The Future of Multi-Energy <br className="hidden md:block" /> Fuel Stations
@@ -55,16 +44,16 @@ export default function HeroSection() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="subheading-prime mx-auto max-w-[860px] text-gray-300"
           >
-            Partner with Shivay BioIndhan Pvt Ltd (SBPL) and build a highly profitable CBG (CNG), Petrol, Diesel & EV charging empire with an estimated <strong className="text-white">50-65% ROI</strong>.
+            Partner with Shivay BioIndhan Pvt Ltd and build a highly profitable CBG, Petrol, Diesel &amp; EV charging empire with an estimated <strong className="text-white">50-65% ROI</strong>.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
             className="flex w-full flex-col gap-5 sm:w-auto sm:flex-row"
           >
             <Link
