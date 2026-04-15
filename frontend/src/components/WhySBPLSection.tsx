@@ -124,7 +124,7 @@ export default function WhySbplSection() {
       <div className="grid-container relative">
         {/* ─── Hero Header ─── */}
         <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
-          <div className="section-label mx-auto">Why SBIPL</div>
+          <div className="section-label mx-auto">Why SBPL</div>
           <h2 className="section-title text-white">A clearer path to a stronger fuel business</h2>
           <p className="section-subtitle mx-auto">
             The business case is stronger when execution support, infrastructure planning, and long-term market demand all line up.

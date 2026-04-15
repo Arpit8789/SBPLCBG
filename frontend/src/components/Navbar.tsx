@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'About', href: '/about' },
   { name: 'Infrastructure', href: '/infrastructure' },
   { name: 'Investment', href: '/investment' },
-  { name: 'Why SBIPL', href: '/why-sbpl' },
+  { name: 'Why SBPL', href: '/why-sbpl' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -45,12 +45,12 @@ export default function Navbar() {
         <div className="grid-container flex min-h-[var(--navbar-height)] items-center justify-between gap-6 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 md:gap-5">
-            <div className="relative h-[76px] w-[76px] shrink-0 md:h-[90px] md:w-[90px]">
-              <Image src="/logo.png" alt="SBIPL Logo" fill loading="eager" sizes="(max-width: 768px) 76px, 90px" className="object-contain" />
+            <div className="relative h-[98px] w-[98px] shrink-0 md:h-[114px] md:w-[114px]">
+              <Image src="/logo.png" alt="SBPL Logo" fill loading="eager" sizes="(max-width: 768px) 88px, 104px" className="object-contain" />
             </div>
             <div>
               <span className="block font-['Outfit'] text-[2rem] font-black leading-none tracking-wide md:text-[2.35rem]">
-                <span className="text-white">SB</span><span className="text-green-500">IPL</span>
+                <span className="text-white">SB</span><span className="text-green-500">PL</span>
               </span>
               <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.23em] text-green-400 md:text-[12px]">
                 Shivay BioIndhan Pvt Ltd

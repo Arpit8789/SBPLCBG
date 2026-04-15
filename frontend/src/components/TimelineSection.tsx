@@ -22,7 +22,7 @@ const steps = [
   {
     phase: '03',
     title: 'Setup and Construction',
-    description: 'SBIPL manages civil work, equipment installation, safety systems, and technical integration from end to end.',
+    description: 'SBPL manages civil work, equipment installation, safety systems, and technical integration from end to end.',
     duration: 'Month 2-4',
     icon: 'Build',
     details: ['Civil construction', 'Equipment installation', 'Safety systems', 'Tech integration']

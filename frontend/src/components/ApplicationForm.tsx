@@ -109,7 +109,7 @@ export default function ApplicationForm() {
            ╚═══════════════════════════════════════╝ */}
         <motion.div {...fadeUp()} className="apply-info">
           {/* Header */}
-          <div className="section-label">Partner with SBIPL</div>
+          <div className="section-label">Partner with SBPL</div>
           <h2 className="section-title">
             Start Your <span className="gradient-text-gold">Fuel Business</span> Today
           </h2>
@@ -128,7 +128,7 @@ export default function ApplicationForm() {
               'Free feasibility study for your location',
               'Detailed ROI projection report',
               'Transparent commercial discussion — no hidden charges',
-              'End‑to‑end setup support by SBIPL',
+              'End‑to‑end setup support by SBPL',
             ].map((b) => (
               <div key={b} className="apply-benefit">
                 <span className="apply-benefit__icon">
@@ -211,7 +211,7 @@ export default function ApplicationForm() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 <h4 className="apply-cta-title">Limited Territories Available</h4>
                 <p className="apply-cta-desc">
-                  SBIPL is onboarding partners in select locations. Applying early gives your
+                  SBPL is onboarding partners in select locations. Applying early gives your
                   territory a better chance of staying open.
                 </p>
               </div>

@@ -5,10 +5,10 @@ const footerSections = [
   {
     title: 'Company',
     links: [
-      { name: 'About SBIPL', href: '/about' },
+      { name: 'About SBPL', href: '/about' },
       { name: 'Infrastructure', href: '/infrastructure' },
       { name: 'Investment Plan', href: '/investment' },
-      { name: 'Why SBIPL', href: '/why-sbpl' },
+      { name: 'Why SBPL', href: '/why-sbpl' },
       { name: 'Gallery', href: '/gallery' },
     ],
   },
@@ -74,7 +74,7 @@ export default function Footer() {
                 <Link href="/" className="flex items-center gap-4">
                   <Image
                     src="/logo.png"
-                    alt="SBIPL Logo"
+                    alt="SBPL Logo"
                     width={64}
                     height={64}
                     className="object-contain"
@@ -136,7 +136,7 @@ export default function Footer() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 border-t border-white/8 pt-6 text-center lg:flex-row lg:justify-between">
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
-                &copy; {currentYear} Shivay BioIndhan Pvt Ltd (SBIPL). All rights reserved. CIN: U40300BR2024PTC077233
+                &copy; {currentYear} Shivay BioIndhan Pvt Ltd (SBPL). All rights reserved. CIN: U40300BR2024PTC077233
               </p>
               <p className="text-[12px] leading-6 text-gray-500 sm:text-[13px]">
                 Building India&apos;s clean energy future

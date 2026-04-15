@@ -17,9 +17,9 @@ type MediaItem = {
 
 const galleryMedia: MediaItem[] = [
   // Existing images
-  { type: 'image', src: '/gallery/gallery-1.jpeg', alt: 'SBIPL Premium Fuel Station', title: 'SBIPL Premium Station', category: 'Station', span: 'md:col-span-2 lg:col-span-2' },
+  { type: 'image', src: '/gallery/gallery-1.jpeg', alt: 'SBPL Premium Fuel Station', title: 'SBPL Premium Station', category: 'Station', span: 'md:col-span-2 lg:col-span-2' },
   { type: 'image', src: '/gallery/gallery-2.jpeg', alt: 'Shivay BioIndhan Night View', title: 'Night View Station', category: 'Station' },
-  { type: 'image', src: '/gallery/gallery-3.jpeg', alt: 'SBIPL Investment Returns', title: 'Investment Returns', category: 'Data' },
+  { type: 'image', src: '/gallery/gallery-3.jpeg', alt: 'SBPL Investment Returns', title: 'Investment Returns', category: 'Data' },
   { type: 'image', src: '/gallery/gallery-4.jpeg', alt: 'CBG CNG Production Plant', title: 'CBG (CNG) Plant', category: 'Plant', span: 'md:col-span-2 lg:col-span-2' },
   { type: 'image', src: '/gallery/gallery-5.jpeg', alt: 'Multi-Energy Station with EV', title: 'Revenue Dashboard', category: 'Data' },
   { type: 'image', src: '/gallery/gallery-6.jpeg', alt: 'Pan-India Expansion Map', title: 'Pan-India Expansion', category: 'Map' },
@@ -29,13 +29,13 @@ const galleryMedia: MediaItem[] = [
   { type: 'news', src: '/gallery/news-2.jpeg', alt: 'Jagran: Sustainable Aviation Fuel from Cooking Oil', title: 'Aviation Fuel from Cooking Oil — Jagran', category: 'News' },
 
   // Videos
-  { type: 'video', src: '/gallery/video-4.mp4', alt: 'SBIPL Site Progress', title: 'SBIPL Site Progress', category: 'Video' },
+  { type: 'video', src: '/gallery/video-4.mp4', alt: 'SBPL Site Progress', title: 'SBPL Site Progress', category: 'Video' },
   { type: 'video', src: '/gallery/video-5.mp4', alt: 'CBG Plant Construction', title: 'CBG Plant Construction', category: 'Video', span: 'md:col-span-2 lg:col-span-2' },
   { type: 'video', src: '/gallery/video-6.mp4', alt: 'Infrastructure Development', title: 'Infrastructure Development', category: 'Video' },
-  { type: 'video', src: '/gallery/video-1.mp4', alt: 'SBIPL Operations Overview', title: 'SBIPL Operations', category: 'Video' },
+  { type: 'video', src: '/gallery/video-1.mp4', alt: 'SBPL Operations Overview', title: 'SBPL Operations', category: 'Video' },
   { type: 'video', src: '/gallery/video-7.mp4', alt: 'Multi-Energy Station Walkthrough', title: 'Station Walkthrough', category: 'Video', span: 'md:col-span-2 lg:col-span-2' },
   { type: 'video', src: '/gallery/video-2.mp4', alt: 'Complete CBG Plant Tour', title: 'Full CBG Plant Tour', category: 'Video' },
-  { type: 'video', src: '/gallery/video-3.mp4', alt: 'SBIPL Company Showcase', title: 'Company Showcase', category: 'Video' },
+  { type: 'video', src: '/gallery/video-3.mp4', alt: 'SBPL Company Showcase', title: 'Company Showcase', category: 'Video' },
 ];
 
 const categories = ['All', 'Station', 'Data', 'Plant', 'Map', 'News', 'Video'];
@@ -63,7 +63,7 @@ export default function GallerySection() {
         >
           <div className="section-label mx-auto">Visual Gallery</div>
           <h2 className="section-title">
-            See the <span className="gradient-text">SBIPL</span> Vision
+            See the <span className="gradient-text">SBPL</span> Vision
           </h2>
           <p className="section-subtitle mx-auto">
             Explore Shivay BioIndhan&apos;s infrastructure, media coverage, and on-ground progress across India.
